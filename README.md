@@ -1,8 +1,7 @@
-# Assignment 1 - Designing Models and Analyzing Data (Template)
-(remove: **text between brackets to be removed**)
+# Assignment 1 - Designing Models and Analyzing Data
 
-> * Participant name: (your name)
-> * Project Title: (Title of the problem you are looking and modeling)
+> * Participant name: Allie Nizam
+> * Project Title: Subway Turnstiles
 
 # General Introduction
 
