@@ -7,9 +7,7 @@
 
 ![Image of Subway City System](images/subway_model.png)
 
-![Image of Subway City System](images/subway_model.png)
-
-![GitHub Logo](/images/object assn1.jpg)
+![Object Assn1](/images/object assn1.png)
 
 (remove: More decription)
 (remove: Maybe a second or third diagram to highlight a point or aspect)
