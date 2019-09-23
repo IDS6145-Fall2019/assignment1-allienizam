@@ -1,8 +1,7 @@
-# Assignment 1 - Designing Models and Analyzing Data (Template)
-(remove: **text between brackets to be removed**)
+# Assignment 1 - Designing Models and Analyzing Data
 
-> * Participant name: (your name)
-> * Project Title: (Title of the problem you are looking and modeling)
+> * Participant name: Allie Nizam
+> * Project Title: Subway Turnstiles
 
 # General Introduction
 
@@ -15,18 +14,20 @@ The second part of the assignment explores data analysis. Data analysis and visu
 
 # Part 1: Designing a Model - Subway System
 
-(remove: States your motivation clearly: why is it important / interesting to solve this problem?)
+It is important to look at the turnstiles in place in subway systems. The same turnstiles are used for passengers entering and exiting the subway system, and can often be the area of bottleneck concerns. What kind of turnstile system is most cost-effective to pass the users through as quick as possible, minimize fare evasion, and collect the payment or transaction accurately for those that pay?
 
-(remove: Add real-world examples, if any)
+There are various turnstile systems in place across the world. There are the common 3-arm or tripod rotating, full height glass, drop arm, and wing style turnstiles. The 2 most common ones are the tripod version, which historically is great for crowd control, but as users can jump over or sneak under, this method still needs manual supervision. The full height glass, or optical barrier, security method is much more difficult to defeat, but has a higer start up cost.
 
-(remove: Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
-
+The botleneck issue in subway systems is a old as the subway system itself. This happens at the bi-directional turnstiles which are put up to curb fare evasion. Take for example the New York City subway - the first underground line opened back in 1904. There are several proposed solutions, not specific to the NYC subway system, but overall to crowd secutiry control. Each method had its advantages and disadvantages, so must be analyzed for the specific application at hand.
 
 ![Image of Subway City System](images/subway_model.png)
 
 ## (Part 1.1): Requirements (Experimental Design) **(10%)**
 
-(remove: You should start by specifying a set of requirements. I specified a topic a Subway escalator. What exactly does that mean - practice formulating your own set of requirements and an experiment. Define problems cities face and hypothesize how a subway system could help alleviate these issue. This helps you think about your problem communication and system objectives inputs, functions, and outputs - they should be clearly specified.)
+* The simulation shall consist of 2 security turnstile methods - tripod arm and full height glass.
+* The system shall make use of the tunrstile formula: (P/M)/L = T, where P = # of people needing to process at peak time, M = minutes of peak flow, T = throughput capacity in people per minute per lane, and L = number of lanes.
+* The simulation shall allow us to adjust the variables just listed for different times and methods.
+* The simulation shall allow us to set for approximately 4 % of users committting fare evasion daily.
 
 ## (Part 1.2) Subway (My Problem) Model **(10%)**
 
