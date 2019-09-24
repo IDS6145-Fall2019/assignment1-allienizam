@@ -7,7 +7,7 @@
 
 ![Image of Subway City System](images/subway_model.png)
 
-![Object Assn1](images/object assn 1.png)
+![ObjectAssn1](images/object_assn_1.png)
 
 (remove: More decription)
 (remove: Maybe a second or third diagram to highlight a point or aspect)
