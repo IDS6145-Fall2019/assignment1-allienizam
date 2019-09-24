@@ -40,7 +40,6 @@ My Model basically consists at the entry or exit area of a subway system, at the
 
 ## (Part 1.3) Subway (My Problem) Simulation **(10%)**
 
-(remove: Describe how you would simulate this - including type of simulation, rough details, inputs, outputs, and how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
 This would be an example of discrete event based simulation as there are discrete events in this process - arrive, pay/evade, pass. Think of a queueing model. We will have a source that generates the agent with the rate of the arrival of people to the system, example exponential(2). Then we will have a queue section, the time people wait in line to reach the actual turnstile. Then we will have a delay section, which is the time to process their transaction at the turnstile. After that, they pass and exit the system. I can use realistic input variables and values from real world data sets - arrival and process rates. Outputs could be minimum, maximum, mean, and standard deviations of the waiting, processing, and total time in minutes; number of entities processed can also be captured. I can visually see the simulation data distribution and perform further statistical analysis to see which turnstile had a more significant reduction in processing times perhaps.
 
 
@@ -49,16 +48,8 @@ This would be an example of discrete event based simulation as there are discret
 You are expected to create the python files - the code should run without errors, create and object(s) for your system, but not provide function detail.
 
 
-
 ## (Part 1.5) Specifying the Inputs to a System **(10%)**
 
-(remove the below points once ideas are satisfied)
-* Specify the independent and dependent input variables of your subway esclator model
-* Specify where the data will come from measured subset of real data (empirical) or synthetic data
-* What kind of statistics are important to capture this input data
-* How do you plan to analyze the output of your model?
-* What ways will you visualize your data - charts, and graphs you will create?
-* What clever way will you visualize your output with a useful infographic?
 
 * Variables are the users and their payment status and which type of turnstile is used.
 * The data for source arrival and processing rates can be synthetic data, such as arrival with exponential(2) meaning 0.5 per minute, but more realistically at rush hours could be 100 per minute or more.
