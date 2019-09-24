@@ -41,7 +41,7 @@ My Model basically consists at the entry or exit area of a subway system, at the
 ## (Part 1.3) Subway (My Problem) Simulation **(10%)**
 
 (remove: Describe how you would simulate this - including type of simulation, rough details, inputs, outputs, and how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
-This would be an example of discrete event based simulation as there are discrete events in this process - arrive, pay/evade, pass. Think of a queueing model. We will have a source that generates the agent with the rate of the arrival of people to the system, example exponential(2). Then we will have a queue section, the time people wait in line to reach the actual turnstile. Then we will have a delay section, which is the time to process their transaction at the turnstile. After that, they pass and exit the system. I can use realistic input variables and values from real world data sets - arrival and process rates. 
+This would be an example of discrete event based simulation as there are discrete events in this process - arrive, pay/evade, pass. Think of a queueing model. We will have a source that generates the agent with the rate of the arrival of people to the system, example exponential(2). Then we will have a queue section, the time people wait in line to reach the actual turnstile. Then we will have a delay section, which is the time to process their transaction at the turnstile. After that, they pass and exit the system. I can use realistic input variables and values from real world data sets - arrival and process rates. Outputs could be minimum, maximum, mean, and standard deviations of the waiting, processing, and total time in minutes; number of entities processed can also be captured. I can visually see the simulation data distribution and perform further statistical analysis to see which turnstile had a more significant reduction in processing times perhaps.
 
 
 ## (Part 1.4) Subway City (My Problem) Model **(10%)**
@@ -59,6 +59,12 @@ You are expected to create the python files - the code should run without errors
 * How do you plan to analyze the output of your model?
 * What ways will you visualize your data - charts, and graphs you will create?
 * What clever way will you visualize your output with a useful infographic?
+
+* Variables are the users and their payment status and which type of turnstile is used.
+* The data for source arrival and processing rates can be synthetic data, such as arrival with exponential(2) meaning 0.5 per minute, but more realistically at rush hours could be 100 per minute or more.
+* We will be most concerned with processing time in the system, so comparions of means will be very good to use as in T-test.
+* It would be wise to keep a simple 2D plot of the distribution of processing times per type of turnstile.
+* An infographic with the various types of turnstiles illustrated with the main pros and cons of each can be couple with basic statistics such as how many units are installed across the US and average processing time.
 
 
 
