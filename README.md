@@ -18,30 +18,30 @@ It is important to look at the turnstiles in place in subway systems. The same t
 
 There are various turnstile systems in place across the world. There are the common 3-arm or tripod rotating, full height glass, drop arm, and wing style turnstiles. The 2 most common ones are the tripod version, which historically is great for crowd control, but as users can jump over or sneak under, this method still needs manual supervision. The full height glass, or optical barrier, security method is much more difficult to defeat, but has a higer start up cost.
 
-The botleneck issue in subway systems is a old as the subway system itself. This happens at the bi-directional turnstiles which are put up to curb fare evasion. Take for example the New York City subway - the first underground line opened back in 1904. There are several proposed solutions, not specific to the NYC subway system, but overall to crowd secutiry control. Each method had its advantages and disadvantages, so must be analyzed for the specific application at hand.
+The botleneck issue in subway systems is a old as the subway system itself. This happens at the bi-directional turnstiles which are put up to curb fare evasion. Take for example the New York City subway - the first underground line opened back in 1904. There are several proposed solutions, not specific to the NYC subway system, but overall to crowd security control. Each method had its advantages and disadvantages, so must be analyzed for the specific application at hand.
 
 ![Image of Subway City System](images/subway_model.png)
 
 ## (Part 1.1): Requirements (Experimental Design) **(10%)**
 
-* The simulation shall consist of 2 security turnstile methods - tripod arm and full height glass.
+* The simulation shall consist of 2 security turnstile methods - tripod arm and full height glass each with its own processing time per pedestrian.
 * The system shall make use of the tunrstile formula: (P/M)/L = T, where P = # of people needing to process at peak time, M = minutes of peak flow, T = throughput capacity in people per minute per lane, and L = number of lanes.
 * The simulation shall allow us to adjust the variables just listed for different times and methods.
 * The simulation shall allow us to set for approximately 4 % of users committting fare evasion daily.
 
 ## (Part 1.2) Subway (My Problem) Model **(10%)**
 
-(remove: add a high-level overview of your model, the part below should link to the model directory markdown files)
-(remove: Look at the [**Object Diagram**](model/object_diagram.md) for how to structure this part of Part 2 for each diagram. Only the Object diagram has the template, the rest are blank. )
+My Model basically consists at the entry or exit area of a subway system, at the turnstile where the users must pass through. See below for the diagrams.
 
-* [**Object Diagram**](model/object_diagram.md) - provides the high level overview of components. My object diagram consists of the turnstiles, the types, and the users.
-* [**Class Diagram**](model/class_diagram.md) - provides details of (what are you providing details of)
-* [**Behavior Diagram**](model/behavior_diagram.md) - provides details of (what are you providing details of)
+* [**Object Diagram**](model/object_diagram.md) - provides the high level overview of components. My object diagram consists of the turnstiles, the two types, and the users that pass through.
+* [**Class Diagram**](model/class_diagram.md) - provides details of (what are you providing details of) My users are the people, their attribute is whether they paid fare or not. The turnstiles can be of 2 different types, and the action they have is to open to let passers through.
+* [**Behavior Diagram**](model/behavior_diagram.md) - provides details of (what are you providing details of) This shows the use-case of the system. The person arrives at the turnstile. They will either evade the fare and pass somehow, or they will pay and the turnstile will allow passage.
 * [**Agent / User case** (if appropriate)](model/agent_usecase_diagram.md) - provides details of (what are you providing details of)
 
 ## (Part 1.3) Subway (My Problem) Simulation **(10%)**
 
 (remove: Describe how you would simulate this - including type of simulation, rough details, inputs, outputs, and how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
+This would be an example of discrete event based simulation as there are discrete events in this process - arrive, pay/evade, pass. Think of a queueing model. We will have a source that generates the agent with the rate of the arrival of people to the system, example exponential(2). Then we will have a queue section, the time people wait in line to reach the actual turnstile. Then we will have a delay section, which is the time to process their transaction at the turnstile. After that, they pass and exit the system. I can use realistic input variables and values from real world data sets - arrival and process rates. 
 
 
 ## (Part 1.4) Subway City (My Problem) Model **(10%)**
